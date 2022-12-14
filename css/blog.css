@@ -344,8 +344,8 @@ button:focus:not(:focus-visible) {
 input,
 button,
 select,
-optgroup,
-textarea {
+optgroup
+{
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -2377,13 +2377,13 @@ progress {
           margin-inline-end: 1rem;
 }
 
-textarea.form-control {
+.form-control {
   min-height: calc(1.5em + 0.75rem + 2px);
 }
-textarea.form-control-sm {
+.form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
 }
-textarea.form-control-lg {
+.form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
 }
 
@@ -11293,10 +11293,16 @@ textarea.form-control-lg {
   display: flex;
   padding: 10px;
 }
-.area{
+textarea{
+  border: none;
+  }
+textarea:focus{
+  outline: none;
+  }
+#area{
   border: none;
 }
-.area:focus{
+#area:focus{
   border: none;
 }
 .logo{
@@ -11309,13 +11315,8 @@ textarea.form-control-lg {
   width: 20rem;
   height: 20rem;
 }
-video {
-  object-fit:cover;
-  width: 100vw;
-  height: 60vh;
-  margin-left: -50%;
-  position: absolute;
-}
+
+
 .inside{
   position: relative;
 }
